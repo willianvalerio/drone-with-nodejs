@@ -11,7 +11,7 @@ pipeline:
       from_secret: u_docker
     password: 
       from_secret: p_docker
-    dry_run: false # remove this to publish
+    dry_run: false # remove this to publish.
   harness deploy:
     image: luisredda/drone-harness-plugin
     settings:  
