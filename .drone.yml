@@ -12,12 +12,6 @@ pipeline:
     password: 
       from_secret: p_docker
     dry_run: false # remove this to publish.
-  my custom step:
-    image: alpine
-    commands:
-      - echo "Hi Harness Team!"
-    depends_on:
-      - build 
   harness deploy:
     image: luisredda/drone-harness-plugin
     settings:  
