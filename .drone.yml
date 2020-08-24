@@ -44,10 +44,4 @@ pipeline:
     when:
       repo:
       - luisredda/drone-with-nodejs
-  my custom step:
-    image: alpine
-    commands:
-      - echo "Hi Harness Team!!"
-    depends_on:
-      - build
   
