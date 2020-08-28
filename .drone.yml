@@ -12,12 +12,12 @@ pipeline:
     password: 
       from_secret: p_docker
     dry_run: false # remove this to publish.
-    meu step custom:
-      image: alpine
-      commands:
-        - echo: "hello world"
-      depends_on:
-        - build
+  meu step custom:
+    image: alpine
+    commands:
+      - echo: "hello world"
+    depends_on:
+      - build
   harness deploy:
     image: luisredda/drone-harness-plugin
     settings:  
